@@ -13,25 +13,25 @@ CLASS ltcl_test IMPLEMENTATION.
 
   METHOD test_get_msg.
 
-    DATA(lv_message_local) = NEW zoblomov_cl_api_user(
-        )->message_get(
-            id         = `TANUMER`
-            number     = `010` ).
-
-    DATA(lv_message_none) = NEW zoblomov_cl_api_user( `NONE`
-        )->message_get(
-            id         = `TANUMER`
-            number     = `010` ).
-
-    TRY.
-        DATA(lv_message_fail) = NEW zoblomov_cl_api_user( `DUMMY`
-            )->message_get(
-                id         = `TANUMER`
-                number     = `010` ).
-        cl_abap_unit_assert=>fail( ).
-      CATCH cx_root INTO DATA(x).
-
-    ENDTRY.
+*    DATA(lv_message_local) = NEW zoblomov_cl_api_user(
+*        )->message_get(
+*            id         = `TANUMER`
+*            number     = `010` ).
+*
+*    DATA(lv_message_none) = NEW zoblomov_cl_api_user( `NONE`
+*        )->message_get(
+*            id         = `TANUMER`
+*            number     = `010` ).
+*
+*    TRY.
+*        DATA(lv_message_fail) = NEW zoblomov_cl_api_user( `DUMMY`
+*            )->message_get(
+*                id         = `TANUMER`
+*                number     = `010` ).
+*        cl_abap_unit_assert=>fail( ).
+*      CATCH cx_root INTO DATA(x).
+*
+*    ENDTRY.
 
   ENDMETHOD.
 

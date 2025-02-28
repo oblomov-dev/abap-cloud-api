@@ -5,13 +5,17 @@ CLASS zoblomov_cl_api_user DEFINITION
 
   PUBLIC SECTION.
 
-    METHODS message_get
+    METHODS check_exists
       IMPORTING
-        id            TYPE clike
-        number        TYPE clike
-        textformat    TYPE clike DEFAULT ``
+        name          TYPE clike
       RETURNING
-        VALUE(result) TYPE string.
+        VALUE(result) TYPE abap_bool.
+
+    METHODS get_detail
+      IMPORTING
+        name          TYPE clike
+      RETURNING
+        VALUE(result) TYPE abap_bool.
 
   PROTECTED SECTION.
   PRIVATE SECTION.
@@ -21,7 +25,11 @@ ENDCLASS.
 
 CLASS zoblomov_cl_api_user IMPLEMENTATION.
 
-  METHOD message_get.
+  METHOD check_exists.
+
+  ENDMETHOD.
+
+  METHOD get_detail.
 
   ENDMETHOD.
 
