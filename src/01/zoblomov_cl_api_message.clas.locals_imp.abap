@@ -65,12 +65,12 @@ CLASS lcl_util IMPLEMENTATION.
             error_message = 2
             OTHERS        = 1.                " Message Short Text
         IF sy-subrc <> 0.
-          ms_config-text = z2ui5_cl_util=>msg_get_s( sy )-text.
+          ms_config-text = zoblomov_cl_util=>msg_get_s( sy )-text.
           ms_config-check_error = abap_true.
           RETURN.
         ENDIF.
       CATCH cx_root INTO DATA(x).
-        ms_config-text = z2ui5_cl_util=>msg_get_s( x )-text.
+        ms_config-text = zoblomov_cl_util=>msg_get_s( x )-text.
         ms_config-check_error = abap_true.
         RETURN.
     ENDTRY.
