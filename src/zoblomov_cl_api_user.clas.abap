@@ -1,4 +1,4 @@
-CLASS zoblomov_cl_api_messages DEFINITION
+CLASS zoblomov_cl_api_user DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC INHERITING FROM zoblomov_cl_api_.
@@ -19,7 +19,7 @@ ENDCLASS.
 
 
 
-CLASS zoblomov_cl_api_messages IMPLEMENTATION.
+CLASS zoblomov_cl_api_user IMPLEMENTATION.
 
   METHOD message_get.
 
