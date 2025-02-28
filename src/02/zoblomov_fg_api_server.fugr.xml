@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>remote-api - remote server</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOBLOMOV_FG_API_SERVERTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOBLOMOV_FG_API_SERVER</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOBLOMOV_FM_API_SERVER</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>remote-api - remote server</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IMPORT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>STRING</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EXPORT</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IMPORT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXPORT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
